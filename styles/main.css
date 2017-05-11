@@ -19,3 +19,9 @@ span.social {
 }
 
 .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+
+h1.name {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 12vh; 
+	text-align:center;
+}
