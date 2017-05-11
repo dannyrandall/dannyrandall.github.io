@@ -1,0 +1,21 @@
+html,body{
+   height:100%;
+}
+.carousel,.item,.active{
+   height:100%;
+ }
+.carousel-inner{
+    height:100%;
+}
+.main-text{
+    position: absolute;
+    top: 30vh; 
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+
+span.social {
+	font-size: 4vh;
+}
+
+.fill{width:100%;height:100%;background-position:center;background-size:cover;}
