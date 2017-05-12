@@ -14,14 +14,29 @@ html,body{
     color: #FFF;
 }
 
-span.social {
-	font-size: 4vh;
-}
-
 .fill{width:100%;height:100%;background-position:center;background-size:cover;}
 
 h1.name {
 	font-family: 'Helvetica Neue', sans-serif;
-	font-size: 12vh; 
+	font-size: 14vh; 
+	font-weight: 100;
 	text-align:center;
+	padding-bottom: 1.5vh;
+}
+
+a i {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+a i:hover { 
+	color: #fff!important;
+	opacity: 1;
+	outline: none!important;
+	text-decoration: none!important;
+	text-shadow: 0 0 1ex #fff, 0 0 4px #fff; 
+	-webkit-transition: all 350ms ease;
+	-moz-transition: all 350ms ease;
+	-ms-transition: all 350ms ease;
+	-o-transition: all 350ms ease;
+	transition: all 350ms ease;
 }
