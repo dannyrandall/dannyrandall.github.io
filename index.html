@@ -17,10 +17,41 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<script>
+		$(document).ready(function () {
+
+    var menu = $('.menu');
+    var origOffsetY = menu.offset().top;
+
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY) {
+            $('.menu').addClass('navbar-fixed-top');
+        } else {
+            $('.menu').removeClass('navbar-fixed-top');
+        }
+
+
+    }
+
+    document.onscroll = scroll;
+
+});
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 75) {
+    $('#content').fadeIn();
+  } else {
+    $('#content').fadeOut();
+  }
+});
+	</script>
 </head>
-
+<!-- 
 <body scroll="no" style="overflow: hidden">
-
+-->
+<body>
+	<div id="header">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -66,6 +97,35 @@
 			</div>
         </div>
     </div>
+	</div>
+
+	<div id="content">
+		<nav class="menu navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand name" href="#">Danny Randall</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      				<li class="active"><a href="#">Home</a></li>
+      				<li><a href="#">Page 1</a></li>
+      				<li><a href="#">Page 2</a></li>
+      				<li><a href="#">Page 3</a></li>
+    			</ul>
+  			</div>
+		</nav>
+	<div class="container">
+		jkfsldjfklsjfkdlsjfkldjk
+		jakflsdjfklasjd;
+		jkal;sdjfkl;adjskfl;
+		jkfdl;asjfkdl;sajfkl
+		jkfdl;sajfkdl;ajsfkl;
+		</p>
+		<h3>fjksldjfkldsjk</h3>
+		<p>jdkslfjdklsjfkdlsjfkld</p>
+		<img src="./images/bg1.jpg">
+		<p> this is me lol </p>
+	</div>
+	<div id="content">
 
 </body>
 </html>
